@@ -44,6 +44,7 @@ p {
     letter-spacing: .1em;
     font-weight: bold;
     margin: 40px 0;
+    transition: all .3s ease;
 }
 
 .btn:hover {
@@ -84,6 +85,7 @@ p {
     font-size: 14px;
     line-height: 20px;
     padding: 10px 0;
+    transition: all .3s ease;
 }
 
 .header-menu ul li a:hover {
@@ -353,6 +355,7 @@ p {
     border: solid 3px #fec63e;
     display: block;
     padding: 10px;
+    transition: all .3s ease;
 }
 
 .footer_redes  ul li a:hover {
@@ -364,3 +367,51 @@ p {
     background-color: #fec63e;
     padding: 20px;
 }
+
+/* Animações */ 
+
+.js .introducao h1, .js .introducao blockquote, .js .introducao .btn, .js .animar, .js .animar-interno, .js .introducao-interna h1, .js .introducao-interna p {
+    opacity: 0;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  
+@-webkit-keyframes fadeInDown {
+0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+}
+
+100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+}
+}
+
+@keyframes fadeInDown {
+0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+}
+
+100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+}
+}
+
+.fadeInDown {
+-webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+}
+
+
